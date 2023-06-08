@@ -1,0 +1,133 @@
+<style>
+    /* styles.css */
+
+/* ... existing CSS code ... */
+
+/* Featured Courses Section */
+
+.featured-courses {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.featured-courses h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.course-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.course-card {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.course-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.course-card .button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.course-card .button:hover {
+  background-color: #555;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .course-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .course-card {
+    padding: 15px;
+  }
+}
+
+</style>
+
+
+<!-- Featured Courses Section -->
+<section class="featured-courses">
+    <h2>Featured Courses</h2>
+    <div class="course-container">
+      <div class="course-card">
+        <img src="https://th.bing.com/th/id/OIP.lOWbeJ7rxSvusQuoi7Sc5AAAAA?pid=ImgDet&w=440&h=310&rs=1" alt="Course 1">
+        <h3>HTML</h3>
+        <p>Course description goes here.</p>
+        <a href="https://www.youtube.com/playlist?list=PLiI9IEV6VZTU0I1Hhmb2dIrZ3V34O1aGy" class="button">Enroll Now</a>
+      </div>
+      <div class="course-card">
+        <img src="https://th.bing.com/th/id/R.b40bc00f9942b432528f2c29971777ed?rik=ABW8meR9D5qQpQ&pid=ImgRaw&r=0" alt="Course 2">
+        <h3>Css</h3>
+        <p>Course description goes here.</p>
+        <a href="https://www.youtube.com/playlist?list=PLiI9IEV6VZTU0I1Hhmb2dIrZ3V34O1aGy" class="button">Enroll Now</a>
+      </div>
+      <div class="course-card">
+        <img src="https://th.bing.com/th/id/R.ba83af6cd1b66fc40fe5bbc218bc90ff?rik=bRyPVdQyz%2bQtIA&pid=ImgRaw&r=0" alt="Course 3">
+        <h3>Javascript</h3>
+        <p>Course description goes here.</p>
+        <a href="https://www.youtube.com/playlist?list=PLiI9IEV6VZTU0I1Hhmb2dIrZ3V34O1aGy" class="button">Enroll Now</a>
+      </div>
+      <div class="course-card">
+        <img src="https://th.bing.com/th/id/OIP.AQ5rAzGvicbIAudCjnmlyQHaHa?w=178&h=180&c=7&r=0&o=5&pid=1.7" alt="Course 4">
+        <h3>python</h3>
+        <p>Course description goes here.</p>
+        <a href="https://www.youtube.com/playlist?list=PLiI9IEV6VZTU0I1Hhmb2dIrZ3V34O1aGy" class="button">Enroll Now</a>
+      </div>
+      <div class="course-card">
+        <img src="data:image/jpeg;base64,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" alt="Course 5">
+        <h3>data science</h3>
+        <p>Course description goes here.</p>
+        <a href="https://www.youtube.com/playlist?list=PLiI9IEV6VZTU0I1Hhmb2dIrZ3V34O1aGy" class="button">Enroll Now</a>
+      </div>
+      <div class="course-card">
+        <img src="https://th.bing.com/th/id/OIP.5CwzDPNfXtNrtpjhZOkGLgHaIV?pid=ImgDet&w=1138&h=1280&rs=1" alt="Course 6">
+        <h3>C++</h3>
+        <p>Course description goes here.</p>
+        <a href="https://www.youtube.com/playlist?list=PLiI9IEV6VZTU0I1Hhmb2dIrZ3V34O1aGy" class="button">Enroll Now</a>
+      </div>
+      <!-- Add more course cards here -->
+    </div>
+  </section>
+  
